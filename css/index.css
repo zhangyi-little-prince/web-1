@@ -2,7 +2,7 @@
 * @Author: hp
 * @Date:   2020-06-06 12:36:02
 * @Last Modified by:   hp
-* @Last Modified time: 2020-06-07 21:28:33
+* @Last Modified time: 2020-06-08 08:13:08
 */
 .whole{
 	width: 100%;
@@ -228,18 +228,19 @@
 	border: 2px solid #1ef8f9;
 }
 .sign{
-	width: 1000px;
+	width: 1200px;
 	height: 500px;
-	margin-top: 100px;
 	border: 3px solid white;
 	border-radius: 10px;
 	box-shadow: 0px 0px 50px #1ef8f9;
+	
+	margin-top: 10px;
 }
 .banimg>.sign{
 	position: absolute;
-	right: 30%;
-	top:30px;
-}
+	right: 18%;
+	top:10%;
+} 
 .kuai{
 	font-size: 50px;
 	color: #1ef8f9;
@@ -535,7 +536,7 @@
 	position: relative;
 }
 .signup1,.signup2{
-	width:650px;
+	width:800px;
 	height: 70px;
 	font-size: 25px;
 	padding-left: 20px;
