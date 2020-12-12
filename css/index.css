@@ -2,7 +2,7 @@
 * @Author: hp
 * @Date:   2020-06-06 12:36:02
 * @Last Modified by:   hp
-* @Last Modified time: 2020-06-08 08:13:08
+* @Last Modified time: 2020-06-08 08:42:23
 */
 .whole{
 	width: 100%;
@@ -54,6 +54,9 @@
 .teshu{
 	color:#000;
 	font-weight:bolder;
+	background: transparent;
+	border: 0px;
+	font-size: 15px;
 }
 .teshu:hover{
 	color: #a54b4d;
@@ -167,14 +170,38 @@
 	background-color: #001238;
 }
 .big{
+	width: 300px;
+	height: 80px;
+	line-height: 80px;
+	text-align: center;
 	color:#ff55bf;
 	border: 2px solid #832a7c; 
 	box-shadow: 0px 0px 20px #c011b2;
-	font-size: 60px;
+	font-size: 40px;
+	position: absolute;
+	position:absolute;
+	left: 200px;
+	top: 10px;
+}
+.big2{
+	width: 300px;
+	height: 80px;
+	line-height: 80px;
+	text-align: center;
+	color:#ff55bf;
+	border: 2px solid #832a7c; 
+	box-shadow: 0px 0px 20px #c011b2;
+	font-size: 40px;
+	position: absolute;
+	position:absolute;
+	right: 200px;
+	top: 10px;
 }
 .wo{
 	color: #ff55bf;
 	font-size: 20px;
+	width: 100px;
+	height: 40px;
 	padding:5px;
 	box-shadow: 1px 1px 20px #c011b2;
 }
@@ -227,20 +254,7 @@
 	box-shadow: 0px 0px 20px #1ef8f9;
 	border: 2px solid #1ef8f9;
 }
-.sign{
-	width: 1200px;
-	height: 500px;
-	border: 3px solid white;
-	border-radius: 10px;
-	box-shadow: 0px 0px 50px #1ef8f9;
-	
-	margin-top: 10px;
-}
-.banimg>.sign{
-	position: absolute;
-	right: 18%;
-	top:10%;
-} 
+
 .kuai{
 	font-size: 50px;
 	color: #1ef8f9;
@@ -283,14 +297,20 @@
 	height: 50px;
 }
 .item{
+	border: 0px;
+	width: 200px;
+	height: 50px;
 	font-size: 20px;
 	color: #34e2e9;
+	background-color: rgba(0,18,56,1.0);
 }
 .nal:hover{
 	border-bottom: 3px solid #0ff9f8;
 	box-shadow:6px 0px 20px #0ff9f8;
 	border-radius: 20px;
 }
+
+
 .main{
 	width: 1200px;
 	margin: 0px auto;
@@ -488,6 +508,8 @@
 	font-family:Microsoft YaHei;
 	font-weight:bold;
 	color:#0e1e41;
+	background-color:#CBCBCB;
+	border: 0px;
 }
 .more>span{
 	position: absolute;
@@ -518,9 +540,11 @@
 	text-align: center;
 	line-height: 80px;
 }
-.bot a{
+.bot input{
 	font-size:15px;
 	color:#001238;
+	background-color: white;
+	border: 0px;
 }
 .ping,.gui,.jiang{
 	font-size:20px;
@@ -529,7 +553,7 @@
 	color:#001238;
 }
 
-.bot a:hover{
+.bot input:hover{
 	color: #0ff9f8;
 }
 .sign{
@@ -541,33 +565,20 @@
 	font-size: 25px;
 	padding-left: 20px;
 }
-.sign form>.signups{
+
+#box1{
 	position: absolute;
-	top: 30%;
-	left: 10%;
+	top: 45%;
+	left: 20%;
+	color:white; 
 }
-.sign form>.signupm{
+#box2{
 	position: absolute;
-	top: 50%;
-	left: 10%;
-}
-.sign>span{
-	position: absolute;
-	top: 20px;
-	left: 40%;
+	top: 65%;
+	left: 20%;
+	color:white; 
 }
 
-.signup{
-	width: 200px;
-	height: 50px;
-	font-size: 20px;
-	border-radius: 10px;
-	color: #1ef8f9;
-	background-color: transparent;
-	box-shadow: 0px 0px 20px #1ef8f9;
-	border: 2px solid #1ef8f9;
-	font-family: '宋体'；
-}
 .yo,.mi{
 	font-size: 30px;
 	color:#1ef8f9; 
@@ -597,7 +608,20 @@
 }
 .s1{
 	color: #1ef8f9;
-	font-size: '仿宋';
+	font-size: 30px;
+	background-color: transparent;
+	text-align: center;
+	height: 150px;
+	border: 0px;
+}
+
+.s2{
+	color: #1ef8f9;
+	font-size: 30px;
+	background-color: transparent;
+	text-align: center;
+	height: 150px;
+	border: 0px;
 }
 
 .right{
@@ -721,4 +745,108 @@
 	position: absolute;
 	left: 0;
 	bottom: 0;
+}
+
+/*弹幕框*/
+#box11{
+	width:1200px;
+	height:500px;
+	position: relative;
+	overflow: hidden;
+	margin:0px auto;
+	display: block;
+	border: 3px solid transparent;
+	border-radius: 10px;
+	box-shadow: 0px 0px 50px rgb(255,192,203);;
+}
+#box12{
+	margin:10px auto;
+	width:1000px;
+	height: 50px;
+}
+#write{
+	width:800px;
+	height: 50px;
+	font-size: 30px;
+	padding-left:20px;
+	line-height: 50px;
+	font-family: '楷体';
+
+}
+#fa{
+	width:100px;
+	height: 50px;
+}
+#box11 span{
+	position: absolute;
+	left:1000px;
+	white-space: nowrap;
+	font-size: 30px;
+	color: rgb(255,192,203);
+	font-family: '楷体';
+
+}
+
+#signid{
+	display: none;
+}
+
+#danmubox{
+	width: 1500px;
+	height: 600px;
+	border: 3px solid transparent;
+	border-radius: 10px;
+	box-shadow: 0px 0px 50px #1ef8f9;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+
+.banimg> #danmubox{
+	position: relative;
+	margin: 0px auto;
+	top:10%;
+}
+
+.sign{
+	width: 1200px;
+	height: 500px;
+	border: 3px solid white;
+	border-radius: 10px;
+	box-shadow: 0px 0px 50px #1ef8f9;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+.banimg>.sign{
+	position: absolute;
+	top:15%;
+	left:20%;
+} 
+
+.sign form>.signups{
+	position: absolute;
+	top: 30%;
+	left: 10%;
+}
+.sign form>.signupm{
+	position: absolute;
+	top: 50%;
+	left: 10%;
+}
+.sign>span{
+	position: absolute;
+	top: 20px;
+	left: 40%;
+}
+
+
+.signup{
+	width: 200px;
+	height: 50px;
+	font-size: 20px;
+	border-radius: 10px;
+	color: #1ef8f9;
+	background-color: transparent;
+	box-shadow: 0px 0px 20px #1ef8f9;
+	border: 2px solid #1ef8f9;
+	font-family: '宋体'；
 }
